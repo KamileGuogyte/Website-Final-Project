@@ -1,0 +1,23 @@
+.apie {
+    display: block;
+    text-decoration: none;
+    margin: .5rem auto ;
+    width: 400px;
+    background-image: linear-gradient(to right bottom, #f6bf49, #f8b540, #faaa38, #fb9f31, #fd932c, #fd8c28, #fe8525, #fe7e22, #fd7a1c, #fd7616, #fc710e, #fb6d05);
+    /* border-radius: 5px; */
+    padding: .5rem;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.apie:hover {
+    background-color: black;
+}
+
+.apie:active {
+  background-color: black;
+  box-shadow: 0 5px #ccc;
+  transform: translateY(4px);
+}

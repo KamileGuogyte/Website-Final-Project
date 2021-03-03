@@ -1,0 +1,13 @@
+.link-dropdown-menu.hide {
+    display: none;
+  }
+  
+  a[dropdown-target].nav-menu-link.show:after {
+    content: " ▶";
+  }
+  
+  .hide.navbar-menu {
+    top: -20px;
+    opacity: 0;
+  }
+  

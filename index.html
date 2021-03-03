@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave&display=swap" rel="stylesheet">
+
+  <title>Document</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="hero.css">
+  <link rel="stylesheet" href="animation_styles.css" />
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="navbar_toggler.css">
+  <link rel="stylesheet" href="text_images.css">
+  <link rel="stylesheet" href="hotels.css">
+  <link rel="stylesheet" href="buttons.css">
+  <link rel="stylesheet" href="typography.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="navbar-main">
+      <div class="container">
+        <div class="logo-container">
+          <div class="logo"></div>
+        </div>
+        <div class="menu-toggler" menu-target="#navbar-menu"></div>
+        <ul class="link-list">
+          <li class="nav-menu-item">
+            <a class="nav-menu-link" href="#apie">Apie Bora Bora</a>
+          </li>
+          <li class="nav-menu-item">
+            <a class="nav-menu-link" href="#hotels">Viešbučiai</a>
+          </li>
+          <li class="nav-menu-item">
+            <a class="nav-menu-link" dropdown-target="#services-menu" content-data="Services ▼">Apie</a>
+            <ul id="services-menu" class="link-dropdown-menu hide">
+              <li class="link-menu-item"><a href="#video">15 faktų apie Bora Bora</a></li>
+              <li class="link-menu-item">
+                <a href="#kontaktai">Kontaktai</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+    <div class="navbar-line"></div>
+    <nav id="navbar-menu" class="navbar-menu hide">
+      <div class="container">
+        <ul class="link-list">
+          <li class="nav-menu-item">
+            <a class="nav-menu-link" href="#apie">Apie Bora Bora </a>
+          </li>
+          <li class="nav-menu-item">
+            <a class="nav-menu-link" href="#hotels">Viešbučiai</a>
+          </li>
+          <li class="nav-menu-item">
+            <a class="nav-menu-link" dropdown-target="#services-menu-mobile">Apie</a>
+            <ul id="services-menu-mobile" class="link-dropdown-menu hide">
+              <li class="link-menu-item"><a href="#video">15 faktų apie Bora Bora</a></li>
+              <li class="link-menu-item">
+                <a href="#kontaktai">Kontaktai </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </nav>
+
+  <div id="hero">
+    <div class="content">
+      <h1 class="hero-title">Jūsų kelionė</h1>
+      <div class="form-container">
+        <form class="form-register">
+          <div class="form-control w-md-50"><input type="text" value="Vilnius (VNO)"></div>
+          <div class="form-control w-md-50"><input type="text" value="Bora Bora"></div>
+          <div class="form-control w-sm-25">
+            <input type="date" id="start" name="trip-start" value="2019-09-01" min="2019-01-01" max="2019-12-31">
+          </div>
+          <div class="form-control w-sm-25">
+            <input type="date" id="start" name="trip-start" value="2019-12-30" min="2019-01-01" max="2019-12-31">
+          </div>
+          <div class="form-control w-sm-50">
+            <select name="" id="">
+              <option value="">Keleiviai</option>
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+              <option value="">4</option>
+            </select>
+          </div>
+          <button type="submit" class="btn-primary">
+            <svg class="search-icon" viewBox="0 0 54 54" width="40" height="40">
+              <path
+                d="M38.25,35.59l-4.42-4.41a10.14,10.14,0,1,0-3.65,3.65l4.41,4.42a2.59,2.59,0,0,0,3.66-3.66ZM17.53,26.1a7.58,7.58,0,1,1,7.58,7.58A7.59,7.59,0,0,1,17.53,26.1Z">
+              </path>
+            </svg>
+          </button>
+        </form>
+      </div>
+      <div class="hero-bg"></div>
+    </div>
+  </div>
+  <iframe class="map"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25734.968664330765!2d-151.7563532099488!3d-16.49952289072454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x76bdbd188a4a98ab%3A0x160a089e92d5ce61!2sBora+Bora!5e0!3m2!1sen!2slt!4v1566566928088!5m2!1sen!2slt"
+    width="2000" height="450" frameborder="0" style="border:0" allowfullscreen>
+  </iframe>
+  
+  <section id="apie">
+    <div class="container">
+      <h2>Apie Bora Bora</h2>
+      <h3 class="text-justify">Sala Ramiajame vandenyne, Prancūzijos Polinezijoje. Įeina į Draugijos
+        salyno Pavėjines salas. Plotas 38 km².
+        Gyvena beveik 7,3 tūkst. gyventojų. Gyventojų tankumas – 192 žm./km².
+        Bora Bora yra 260 km į šiaurės vakarus nuo Taičio. Sudaro pagrindinė sala – dviejų užgesusių ugnikalnių (Pahia
+        k. – 660 m, ir Otemanu k. – 727 m) apirusios viršūnės.
+        Salą supa didelė lagūna, nuo vandenyno atribota koralinių rifų atolų (Tubuati, Motu Mute, Tubuai). Į lagūną
+        galima įplaukti tik per vieną įplauką Motus.
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+        aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+        cupidatat
+      </h3>
+  </section>
+
+  <div class="about">
+    <div class="container">
+      <div class="rest-img-container">
+        <img class="rest-img" src="img/space2.jpg">
+        <img class="rest-img" src="img/space5.jpg">
+        <img class="rest-img" src="img/space8.jpg">
+      </div>
+      <div class="clearfix"></div>
+      <h3 class="text-justify">
+        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        voluptas veritatis quod quia eius beatae error distinctio veniam,
+        assumenda quas porro odit voluptatibus architecto natus quae corrupti
+        sed. Consequuntur sed dolores aliquid quas assumenda, impedit
+        dignissimos quod sequi qui nobis accusamus optio placeat expedita
+        distinctio at vitae quos consectetur ab sunt fugit? Natus eveniet
+        debitis dolorem blanditiis sed harum perspiciatis perferendis, earum
+        asperiores numquam dignissimos, explicabo obcaecati fugiat ea
+        adipisci, voluptatibus suscipit alias nulla quibusdam expedita fuga
+        excepturi laborum aspernatur odio. Iure nam possimus facere eos
+        recusandae aut, qui, rerum, officia ad voluptas quisquam quod omnis
+        explicabo distinctio dolor blanditiis impedit quas reprehenderit
+        numquam. Quae iusto ex expedita illum asperiores, quisquam qui harum
+        iure exercitationem quasi sit! voluptas veritatis quod quia eius beatae error distinctio veniam,
+        assumenda quas porro odit voluptatibus architecto natus quae corrupti
+        sed.
+      </h3>
+    </div>
+  </div>
+  </div>
+
+  <div id="land1">
+    <div class="container"></div>
+  </div>
+
+  <div class="container">
+    <h2>Kodėl rinktis Bora Bora?</h2>
+    <h3 class="text-justify">voluptas veritatis quod quia eius beatae error distinctio veniam,
+      assumenda quas porro odit voluptatibus architecto natus quae corrupti
+      sed. Consequuntur sed dolores aliquid quas assumenda, impedit
+      dignissimos quod sequi qui nobis accusamus optio placeat expedita
+      distinctio at vitae quos consectetur ab sunt fugit? Natus eveniet
+      debitis dolorem blanditiis sed harum perspiciatis perferendis, earum
+      asperiores numquam dignissimos, explicabo obcaecati fugiat ea
+      adipisci, voluptatibus suscipit alias nulla quibusdam expedita fuga
+      excepturi laborum aspernatur odio. Iure nam possimus facere eos
+      recusandae aut, qui, rerum, officia ad voluptas quisquam quod omnis
+      explicabo distinctio dolor blanditiis impedit quas reprehenderit
+      numquam. Quae iusto ex expedita illum asperiores, quisquam qui harum
+      iure exercitationem quasi sit!
+    </h3>
+
+    <section id="video">
+      <iframe width="100%" height="500" src="https://www.youtube.com/embed/YEqgzA41t4M" frameborder="0" allow="accelerometer; autoplay; encrypted-media;
+       gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+
+    <h3 class="text-justify">
+      voluptas veritatis quod quia eius beatae error distinctio veniam,
+      assumenda quas porro odit voluptatibus architecto natus quae corrupti
+      sed. Consequuntur sed dolores aliquid quas assumenda, impedit
+      dignissimos quod sequi qui nobis accusamus optio placeat expedita
+      distinctio at vitae quos consectetur ab sunt fugit? Natus eveniet
+      debitis dolorem blanditiis sed harum perspiciatis perferendis, earum
+      asperiores numquam dignissimos, explicabo obcaecati fugiat ea
+      adipisci, voluptatibus suscipit alias nulla quibusdam expedita fuga
+      excepturi laborum aspernatur odio. Iure nam possimus facere eos
+      recusandae aut, qui, rerum, officia ad voluptas quisquam quod omnis
+      explicabo distinctio dolor blanditiis impedit quas reprehenderit
+      numquam. Quae iusto ex expedita illum asperiores, quisquam qui harum
+      iure exercitationem quasi sit!
+      voluptas veritatis quod quia eius beatae error distinctio veniam,
+      assumenda quas porro odit voluptatibus architecto natus quae corrupti
+      sed.
+    </h3>
+  </div>
+
+  <div id="space1">
+    <div class="container"></div>
+  </div>
+
+  <section id="hotels">
+    <div class="content">
+      <h2 class="text-center">Apsistokite geriausiuose salos viešbučiuose!</h2>
+      <div class="clearfix"></div>
+      <div class="hotel-container">
+        <div class="hotel">
+          <div class="price">500</div>
+          <h2 class="address">Four Seasons Resort Bora Bora <a
+              href="https://www.fourseasons.com/content/fourseasons/en/properties/borabora/landing_pages/ppc/landing_3.html/?gclid=EAIaIQobChMIrY7xgJeo5AIVidGyCh04vwLrEAAYASAAEgJkvPD_BwE&source=gaw18borS01&ef_id=EAIaIQobChMIrY7xgJeo5AIVidGyCh04vwLrEAAYASAAEgJkvPD_BwE:G:s&s_kwcid=AL!4732!3!285729215025!e!!g!!four%20seasons%20resort%20bora%20bora"
+              class="apie">Apžiūrėti viešbutį</a></h2>
+          <img src="img/hotel1.jpg" alt="hotel1" class="hotel-img" />
+          <div class="hotel-info">
+            <h4 class="hotel-title"> BP 547, Motu Tehotu, 98730, Prancūzijos Polinezija </h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+              quam, excepturi cupiditate, doloribus, repellendus cumque
+              inventore officia voluptates quasi reiciendis velit perferendis
+              fuga suscipit harum corrupti mollitia debitis sunt odio minus?
+              Quibusdam, accusantium. Numquam doloribus libero quidem quam
+              alias, ab, doloremque nulla sed optio modi voluptatum voluptatem
+              blanditiis, fugit soluta.
+            </p>
+            <div>
+              <span class="hotel-property">Kiemelis:</span>80 m²
+            </div>
+            <div>
+              <span class="hotel-property">Vaizdas:</span>į jūrą<sup>
+            </div>
+            <div><span class="hotel-property">Viešbučio tipas:</span> virš vandens</div>
+            <div>
+              <span class="hotel-property">Patogumai:</span>Plokščiaekranis televizorius, Telefonas,
+              Palydovinė televizija, „iPod“ prijungimo stotelė, nemokamas belaidis internetas
+            </div>
+            <div>
+              <span class="hotel-property">Kambaryje:</span>
+              Svetainės zona, dušas, vonia, privatus vonios kambarys, Mini baras.
+            </div>
+            <div>
+              <span class="hotel-property">Kontaktai:</span>+370 656 23942
+            </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4549.961857679069!2d-151.70777107547724!3d-16.47317711008523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x76bdbd86ce55f507%3A0xe5f1074d61ace582!2sFour%20Seasons%20Resort%20Bora%20Bora!5e0!3m2!1sen!2slt!4v1566909147799!5m2!1sen!2slt"
+              width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          </div>
+          <div class="clearfix"></div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="hotel">
+          <div class="price">250</div>
+          <h2 class="address">Bora Bora Lagoon Resort <a
+              href="https://www.fourseasons.com/borabora/services_and_amenities/other_facilities_and_services/lagoon_sanctuary/"
+              class="apie">Apžiūrėti viešbutį</a></h2>
+          <img src="img/hotel2.jpg" alt="hotel2" class="hotel-img" />
+          <div class="hotel-info">
+            <h4 class="hotel-title">175 98730 Bora Bora, Vaitape, Prancūzijos Polinezija </h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+              quam, excepturi cupiditate, doloribus, repellendus cumque
+              inventore officia voluptates quasi reiciendis velit perferendis
+              fuga suscipit harum corrupti mollitia debitis sunt odio minus?
+              Quibusdam, accusantium. Numquam doloribus libero quidem quam
+              alias, ab, doloremque nulla sed optio modi voluptatum voluptatem
+              blanditiis, fugit soluta.
+            </p>
+            <div>
+              <span class="hotel-property">Kiemelis:</span>40 m²
+            </div>
+            <div>
+              <span class="hotel-property">Vaizdas:</span>į jūrą<sup>
+            </div>
+            <div><span class="hotel-property">Viešbučio tipas:</span>prie jūros</div>
+            <div>
+              <span class="hotel-property">Patogumai:</span>Plokščiaekranis televizorius, Telefonas, DVD grotuvas,
+              Palydovinė televizija, „iPod“ prijungimo stotelė, nemokamas belaidis internetas
+            </div>
+            <div>
+              <span class="hotel-property">Kambaryje:</span>
+              Svetainės zona, dušas, vonia, Mini baras.
+            </div>
+            <div>
+              <span class="hotel-property">Kontaktai:</span>+370 656 23942
+            </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9097.262715609291!2d-151.74164549024292!3d-16.529742100234213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x76bda2d367e32583%3A0x29620e96ad4c7464!2sBora%20Bora%20Lagoon%20Resort!5e0!3m2!1sen!2slt!4v1566912254723!5m2!1sen!2slt"
+              width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          </div>
+          <div class="clearfix"></div>
+          <div class="clearfix"></div>
+        </div>
+
+        <div class="hotel">
+          <div class="price">300</div>
+          <h2 class="address">Conrad Bora Bora Nui <a
+              href="https://conradhotels3.hilton.com/en/hotels/french-polynesia/conrad-bora-bora-nui-PPTBNCI/index.html?WT.srch=1&WT.mc_id=zIMDPDA0APAC1MB2PSH3PPC_Google_search4cid745131518_aid41870454394_me_kkwd-3342550345575Brand_Nano6PPTBNCI7en&utm_source=Google&utm_medium=ppc&utm_campaign=paidsearch&campaignid=745131518&adgroupid=41870454394&targetid=kwd-334255034557&gclsrc=aw.ds&ds_rl=1264287"
+              class="apie">Apžiūrėti viešbutį</a></h2>
+          <img src="img/hotel3.jpg" alt="hotel3" class="hotel-img" />
+          <div class="hotel-info">
+            <h4 class="hotel-title"> BP 502, Vaitape, 98730, Prancūzijos Polinezija </h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+              quam, excepturi cupiditate, doloribus, repellendus cumque
+              inventore officia voluptates quasi reiciendis velit perferendis
+              fuga suscipit harum corrupti mollitia debitis sunt odio minus?
+              Quibusdam, accusantium. Numquam doloribus libero quidem quam
+              alias, ab, doloremque nulla sed optio modi voluptatum voluptatem
+              blanditiis, fugit soluta.
+            </p>
+            <div>
+              <span class="hotel-property">Kiemelis:</span>70m²
+            </div>
+            <div>
+              <span class="hotel-property">Vaizdas:</span>į jūrą<sup>
+            </div>
+            <div><span class="hotel-property">Viešbučio tipas:</span>šalia jūros</div>
+            <div>
+              <span class="hotel-property">Patogumai:</span>Plokščiaekranis televizorius, Telefonas, DVD grotuvas,
+              Palydovinė televizija, „iPod“ prijungimo stotelė, nemokamas belaidis internetas
+            </div>
+            <div>
+              <span class="hotel-property">Kambaryje:</span>
+              Svetainės zona, dušas, vonia, privatus vonios kambarys, Mini baras.
+            </div>
+            <div>
+              <span class="hotel-property">Kontaktai:</span>+370 656 23942
+            </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3937.0298349413297!2d-151.76707167522264!3d-16.528612346720685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x76bdbce07067e993%3A0x267164a06084ff73!2sConrad%20Bora%20Bora%20Nui!5e0!3m2!1sen!2slt!4v1566911594284!5m2!1sen!2slt"
+              width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          </div>
+          <div class="clearfix"></div>
+          <div class="clearfix"></div>
+        </div>
+
+        <div class="hotel">
+          <div class="price">800</div>
+          <h2 class="address">InterContinental Bora Bora Spa <a
+              href="https://www.intercontinental.com/hotels/gb/en/find-hotels/hotel/list?qDest=Bora%20Bora,%20French%20Polynesia&qCiMy=72019&qCiD=29&qCoMy=72019&qCoD=30&qAdlt=1&qChld=0&qRms=1&qIta=99603195&qAkamaiCC=LT&qSrt=sBR&qBrs=re.ic.in.vn.cp.vx.hi.ex.rs.cv.sb.cw.ma.ul.ki.va&srb_u=1&setPMCookies=true&glat=SEAR&qRad=483&qRdU=km"
+              class="apie">Apžiūrėti viešbutį</a></h2>
+          <img src="img/hotel4.jpg" alt="hotel4" class="hotel-img" />
+          <div class="hotel-info">
+            <h4 class="hotel-title">Motu Piti Aau, 98730, Prancūzijos Polinezija </h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+              quam, excepturi cupiditate, doloribus, repellendus cumque
+              inventore officia voluptates quasi reiciendis velit perferendis
+              fuga suscipit harum corrupti mollitia debitis sunt odio minus?
+              Quibusdam, accusantium. Numquam doloribus libero quidem quam
+              alias, ab, doloremque nulla sed optio modi voluptatum voluptatem
+              blanditiis, fugit soluta.
+            </p>
+            <div>
+              <span class="hotel-property">Kiemelis:</span>100 m²
+            </div>
+            <div>
+              <span class="hotel-property">Vaizdas:</span>į jūrą<sup>2
+            </div>
+            <div><span class="hotel-property">Viešbučio tipas:</span> virš vandens</div>
+            <div>
+              <span class="hotel-property">Patogumai:</span>Plokščiaekranis televizorius, Telefonas, DVD grotuvas,
+              Palydovinė televizija, „iPod“ prijungimo stotelė, nemokamas belaidis internetas
+            </div>
+            <div>
+              <span class="hotel-property">Kambaryje:</span>
+              Svetainės zona, dušas, vonia, privatus vonios kambarys, Mini baras.
+            </div>
+            <div>
+              <span class="hotel-property">Kontaktai:</span>+370 656 23942
+            </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61199.23165303907!2d-151.79983830066635!3d-16.528521837107455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x76bdbd58c8e35e1b%3A0x81fda639b2a452f2!2sInterContinental%20Bora%20Bora%20Resort%20Thalasso%20Spa!5e0!3m2!1sen!2slt!4v1566912103967!5m2!1sen!2slt"
+              width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="flamingo">
+    <div class="container"></div>
+  </div>
+
+  <div class="content">
+    <h2 class="text-center header-white">Saloje jus džiugins neriboti:</h2>
+    <div class="ice-container">
+
+      <div class="ice-container">
+        <div class="ice-img-container">
+
+          <h3 class="ice-name">Ledai</h3>
+          <img class="ice-img" src="img/ice.jpg" alt="icecream">
+          </a>
+        </div>
+      </div>
+
+      <div class="ice-container">
+        <div class="ice-img-container">
+
+          <h3 class="ice-name">Pyragaičiai</h3>
+          <img class="ice-img" src="img/cake.jpg" alt="icecream">
+          </a>
+        </div>
+      </div>
+
+      <div class="ice-container">
+        <div class="ice-img-container">
+
+          <h3 class="ice-name">Kokteiliai</h3>
+          <img class="ice-img" src="img/tails.jpg" alt="icecream">
+          </a>
+        </div>
+      </div>
+
+      <div class="ice-container">
+        <div class="ice-img-container">
+
+          <h3 class="ice-name">Flamingai</h3>
+          <img class="ice-img" src="img/flam.jpg" alt="icecream">
+          </a>
+        </div>
+      </div>
+
+      <footer>
+        <div class="footer"></div>
+        <section id="kontaktai">
+          <div class="kontaktai-line"></div>
+          <div class="about">
+            <div class="footer-container">
+
+              <div class="col-1">
+                <h2>Bora Bora</h2>
+                <p>Company Profile</p>
+                <p>Events</p>
+                <p>Sitemap</p>
+              </div>
+
+              <div class="col-1">
+                <h2>Support</h2>
+                <p>Downloads</p>
+                <p>Contact Us Online</p>
+                <p>Sales and Service Partners</p>
+              </div>
+
+              <div class="col-1">
+                <h2>About us</h2>
+                <p>Advertisement</p>
+                <p>Press / Media Contact</p>
+                <p>Career</p>
+              </div>
+            </div>
+
+            <div class="clearfix"></div>
+          </div>
+
+<div class="footer-line"></div>
+          <div class="container"></div>
+          <div class="col-1-3">
+            <p>© 2019 IrelandDream. All rights reserved.</p>
+          </div>
+        
+    </div>
+    </footer>
+    </section>
+  </div>
+  <script src="animations.js"></script>
+  <script src="hotels.js"></script>
+</body>
+</html>

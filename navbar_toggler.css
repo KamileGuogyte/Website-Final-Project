@@ -1,0 +1,56 @@
+.menu-toggler {
+    height: 40px;
+    width: 40px;
+    border: 2px solid #FA7F25;
+    border-radius: 7px;
+    margin-top: 10px;
+    display: block;
+    float: right;
+  }
+  
+  .menu-toggler:before {
+    position: relative;
+    top: 0;
+    right: 0;
+    content: "";
+    width: 26px;
+    display: block;
+    border-bottom: 2px solid #FA7F25;
+    margin-top: 10px;
+    margin-left: 5px;
+    transition: all 0.6s ease-in-out, border-color 1ms;
+  }
+  
+  .menu-toggler:after {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    content: "";
+    width: 26px;
+    display: block;
+    border-bottom: 2px solid #FA7F25;
+    margin-top: 12px;
+    margin-left: 5px;
+    transition: all 0.6s ease-in-out, border-color 1ms;
+  }
+  
+  .menu-toggler:hover,
+  .menu-toggler:hover:before,
+  .menu-toggler:hover:after {
+    border-color: #7b7b9b;
+  }
+  
+  .menu-toggler.show:before {
+    top: 7px;
+    right: 3px;
+    width: 34px;
+    transform: rotate(45deg);
+  }
+  
+  .menu-toggler.show:after {
+    bottom: 7px;
+    right: 3px;
+    width: 34px;
+    transform: rotate(-45deg);
+  }
+  

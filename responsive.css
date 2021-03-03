@@ -1,0 +1,192 @@
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .container {
+    width: calc(576px - 2rem);
+  }
+  .cover:after {
+    background-attachment: fixed;
+  }
+
+  /* Form section */
+  #hero .form-container .w-sm-25 {
+    width: calc(25% - 0.5rem); 
+  }
+  }
+
+  #hero .form-container .w-sm-50 {
+    width: calc(50% - 0.5rem);
+  }
+
+  .btn-primary {
+    display: block;
+    width: calc(200px);
+    margin: auto;
+  }
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .container {
+    width: calc(768px - 2rem);
+  }
+
+/* Navbar changes */
+.navbar-menu,
+.menu-toggler {
+  display: none;
+}
+
+.navbar-main .link-list {
+  display: flex;
+}
+
+.nav-menu-item {
+  line-height: 2rem;
+  display: inline-block;
+  border-bottom: none;
+  margin-right: 1rem;
+  font-size: 1.5rem;
+}
+
+a.nav-menu-link {
+  height: 60px;
+  line-height: 60px;
+  padding: 0;
+}
+
+a[dropdown-target] {
+  position: relative;
+  bottom: 60px;
+}
+
+a[dropdown-target]:before {
+  display: block;
+  content: attr(content-data);
+  position: relative;
+  width: 100%;
+  opacity: 0;
+}
+
+.nav-menu-item:not(:last-of-type) {
+  border: none;
+}
+
+.link-dropdown-menu {
+  top: 100px;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.747);
+}
+
+.link-menu-item {
+  padding: 0.75rem;
+}
+
+.link-menu-item a {
+  font-size: 1.25rem;
+}
+
+  /* Ledu sekcija  */
+  .ice-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .form-container {
+    width: 50%;
+  }
+
+  /* Form section */
+
+  #hero .form-container .w-md-50 {
+    width: calc(50% - 0.5rem);
+  }
+}
+
+/* Hotels sekcija */
+
+.hotel-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.address {
+  font-size: 2rem;
+}
+
+.hotel-info {
+  position: relative;
+}
+
+.hotel-map {
+  height: 184px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: calc(100% - 300px);
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .container {
+    width: calc(992px - 2rem);
+  }
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .container {
+    width: calc(1200px - 2rem);
+  }
+
+  .content {
+    display: inline-block;
+    /* width: 50%; */
+  }
+
+  /* Rest apie */
+
+  .rest-img-container{
+    display: flex;
+
+  }
+  
+   .rest-img {
+     height: 300px;
+     width: calc(100% / 3  - 2rem / 3);
+   }
+
+   .rest-img:not(:last-of-type){
+     margin-right: 1rem;
+   }
+
+
+  /* Form section */
+  #hero .form-container {
+    width: 900px;
+  }
+
+  #hero .form-container .form-control {
+    width: calc(18% - 0.5rem);
+  }
+
+  .btn-primary {
+    display: block;
+    width: calc(10% - 0.5rem);
+    float: left;
+    height: 60px;
+  }
+
+  /* Hotels */
+
+  .hotel {
+    width: calc(1200px - 2rem);;
+    margin: 0;
+    box-shadow: none;
+  }
+
+  .hotel-img {
+    height: 400px;
+  }
+}

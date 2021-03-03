@@ -1,0 +1,63 @@
+
+#land1 {
+    height: 100vh;
+    background: url(img/land1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+#space1 {
+    height: 100vh;
+    background: url(img/space1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+#flamingo {
+    height: 100vh;
+    background: url(img/flamingo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  /* Ledu sekcija */
+#ice .content {
+  background-color: #e7dde1;
+}
+
+.ice-container {
+  display: block;
+}
+
+.ice-container {
+  margin-bottom: 2.5rem;
+}
+
+.ice-img-container {
+  width: 270px;
+  height: 270px;
+  margin: auto;
+}
+
+.ice-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 1px solid #1f1f3b;
+}
+
+.ice-name {
+  color: black;
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+.ice-role {
+  color: #d4d4d4;
+  text-align: center;
+  margin: 0.5rem 0;
+}
+  
