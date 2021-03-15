@@ -5,7 +5,7 @@ const hotels = [
         name:  "Four Seasons Resort Bora Bora",
         link: "https://www.fourseasons.com/content/fourseasons/en/properties/borabora/landing_pages/ppc/landing_3.html/?gclid=EAIaIQobChMIrY7xgJeo5AIVidGyCh04vwLrEAAYASAAEgJkvPD_BwE&source=gaw18borS01&ef_id=EAIaIQobChMIrY7xgJeo5AIVidGyCh04vwLrEAAYASAAEgJkvPD_BwE:G:s&s_kwcid=AL!4732!3!285729215025!e!!g!!four%20seasons%20resort%20bora%20bora",
         img: "C:/Users/user11/Desktop/MyProject_Kamile/img/hotel1.jpg",
-        adress: "175 98730 Bora Bora, Vaitape, Prancūzijos Polinezija",
+        adress: "175 98730 Bora Bora, Vaitape, French Polynesia",
         description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
         quam, excepturi cupiditate, doloribus, repellendus cumque
         inventore officia voluptates quasi reiciendis velit perferendis
